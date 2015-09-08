@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>SCU WEB</title>
+  <title>SCU WEB开发协会</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -11,13 +11,172 @@
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
-<body class="background">
-<div class="container">
-	<div class="title">
-		<h1>SCU WEB UNION</h1>
-		<button class="btn btn-default"> JOIN US </button>
+<body>
+
+<header class="nav">
+	<div class="container">
+		<div class="nav-brand">
+			<h4>WEB开发协会</h4>
+		</div>
+		<div class="nav-right">
+			<ul class="nav-collapse" id="nav-collapse">
+				<li><a href="#intro">WEB开发简介</a></li>
+				<li><a href="#department">部门简介</a></li>
+				<li><a href="#join">我要报名!</a></li>
+			</ul>
+		</div>
 	</div>
+</header>
+
+<div class="banner">
+  <h1 class="banner-title fadeInUp">欢迎来到四川大学Web开发协会</h1>
+  <div class="banner-content" id="banner-content">
+    <button class="btn btn-lg radius btn-primary">加入我们</button>
+    <button class="btn btn-lg radius btn-transparent">了解更多</button>
+  </div>
 </div>
+
+<div class="intro" id="intro">
+  <div class="container">
+    <h1 class="title">WEB前端开发</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="intro-box">
+          <img src="i/html.jpg">
+          <p>HTML 是属于 Web 的语言，每个开发人员都应对它具备基本的了解。你可以使用 HTML 的“标记标签”来定义网页的内容和结构。</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="intro-box">
+          <img src="i/css.jpg">
+          <p>样式表定义如何显示 HTML 元素。如果样式保存在外部文件中，那么仅仅通过改变 CSS 文件，你就可以改变网站中所有 HTML 页面的的样式和外观。</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="intro-box">
+          <img src="i/JavaScript.jpg">
+          <p>JavaScript 用于客户端的脚本化。客户端脚本化指的是 Web 浏览器编程。你很有必要学习JavaScript，这样你就有能力提供动态性更强的网站内容。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="department" id="department">
+  <div class="container">
+    <h1 class="title">部门介绍</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="department-box" id="department-box1">
+          <img src="i/pic01.jpg">
+          <h3>行政部</h3>
+          <p>主要负责社团管理以及活动开展</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="department-box" id="department-box2">
+          <img src="i/pic02.jpg">
+          <h3>宣传部</h3>
+          <p>负责社团对外宣传，发布社团成果、最新动态、宣传海报等制作。</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="department-box" id="department-box3">
+          <img src="i/pic03.jpg">
+          <h3>技术部</h3>
+          <p>设计组：主要负责项目UI设计<br>前端组：专注于前端开发<br>后端组：专注于后端开发</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="join" id="join">
+  <div class="container">
+    <h1 class="title">加入我们</h1>
+    <form class="join-form">
+      <div class="row">
+        <label>姓名：</label><input name="name" type="text" placeholder="姓名" />
+      </div>
+      <div class="row">
+        <label>联系方式：</label><input name="tel" type="text" placeholder="手机" />
+      </div>
+      <div class="row">
+        <label>邮箱：</label><input name="email" type="email" placeholder="邮箱" />
+      </div>
+      <div class="row">
+        <label>部门选择：</label>
+        <select>
+          <option>行政部</option>
+          <option>宣传部</option>
+          <option>技术部-设计组</option>
+          <option>技术部-前端组</option>
+          <option>技术部-后端组</option>
+        </select>
+      </div>
+      <div class="row">
+      </div>
+      <div class="row">
+        <label>年级：</label><input name="name" type="text" placeholder="年级" />
+      </div>
+      <div class="row">
+        <label>学院：</label><input name="name" type="text" placeholder="学院" />
+      </div>
+      <div class="row">
+        <label>专业：</label><input name="name" type="text" placeholder="专业" />
+      </div>
+      <div class="row">
+        <button class="btn btn-lg radius btn-primary" type="submit" id="submit">申请加入</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <ul>
+    <li>关于我们 |</li>
+    <li>联系我们 |</li>
+    <li>合作咨询</li>
+  </ul>
+  <p>
+    © Copyright SCU WEB+. 
+  </p>
+  <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+    <a href="#top" title="">
+      <i class="am-icon-btn am-icon-arrow-up am-success"></i>
+    </a>
+  </div>
+</footer>
+
+<script type="text/javascript">
+window.onload = function() {
+  function overHandler(){
+    var obj1 = document.getElementById("department-box1");
+    var obj2 = document.getElementById("department-box2");
+    var obj3 = document.getElementById("department-box3");
+    obj1.className += " " + "fadeInDown";
+    setTimeout(function(){
+      obj2.className += " " + "fadeInDown";
+      setTimeout(function(){
+        obj3.className += " " + "fadeInDown";
+      },500);
+    },500);
+  }
+  setTimeout(function(){
+    var obj = document.getElementById("banner-content");
+    obj.className += " " + "fadeIn";
+  },1000);
+  setTimeout(overHandler,5000);
+  var department = document.getElementById("department");
+  if(document.addEventListener) {
+    department.addEventListener("mouseover",overHandler,true);
+  }
+  else if(document.attachEvent) {
+    department.attachEvent("onmouseover",overhandler);
+  }
   
+}
+</script>
+
 </body>
 </html>
