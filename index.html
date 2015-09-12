@@ -20,7 +20,7 @@
 		</div>
 		<div class="nav-right">
 			<ul class="nav-collapse" id="nav-collapse">
-				<li><a href="#intro">WEB开发简介</a></li>
+				<li><a href="#intro">社团简介</a></li>
 				<li><a href="#department">部门简介</a></li>
 				<li><a href="#join">我要报名!</a></li>
 			</ul>
@@ -28,7 +28,7 @@
 	</div>
 </header>
 
-<div class="banner">
+<div class="banner" id="banner">
   <h1 class="banner-title fadeInUp">欢迎来到四川大学Web开发协会</h1>
   <div class="banner-content" id="banner-content">
     <button class="btn btn-lg radius btn-primary">加入我们</button>
@@ -37,29 +37,44 @@
 </div>
 
 <div class="intro" id="intro">
-  <div class="container">
-    <h1 class="title">WEB前端开发</h1>
+  <div class="container" style="padding-top: 2em;">
     <div class="row">
-      <div class="col-lg-4">
-        <div class="intro-box">
-          <img src="i/html.jpg">
-          <p>HTML 是属于 Web 的语言，每个开发人员都应对它具备基本的了解。你可以使用 HTML 的“标记标签”来定义网页的内容和结构。</p>
-        </div>
+      <div class="col-lg-5" style="text-align:center">
+        <img src="i/web.png" width="80%" id="img1" style="opacity: 0;">
       </div>
-      <div class="col-lg-4">
-        <div class="intro-box">
-          <img src="i/css.jpg">
-          <p>样式表定义如何显示 HTML 元素。如果样式保存在外部文件中，那么仅仅通过改变 CSS 文件，你就可以改变网站中所有 HTML 页面的的样式和外观。</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="intro-box">
-          <img src="i/JavaScript.jpg">
-          <p>JavaScript 用于客户端的脚本化。客户端脚本化指的是 Web 浏览器编程。你很有必要学习JavaScript，这样你就有能力提供动态性更强的网站内容。</p>
-        </div>
+      <div class="col-lg-7" id="intro1" style="opacity: 0;">
+        <h1 class="title">社团简介</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Web开发协会是致力于为大家提供优质的资源和服务的交流学习Web开发技术的平台。这里有一群热爱Web开发的小伙伴。有熟悉前端开发的学长，有Python、PHP等后端大神，还有已经毕业的有丰富开发经验的学长。我们的社团交流QQ群：457426992。</p>
       </div>
     </div>
   </div>
+
+  <div class="bg-grey"><div class="container" style="padding-top: 2em;">
+    <div class="row">
+      <div class="col-lg-7" id="intro2" style="opacity: 0;">
+        <h1 class="title">WEB后端开发</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Web开发协会是致力于为大家提供优质的资源和服务的交流学习Web开发技术的平台。这里有一群热爱Web开发的小伙伴。有熟悉前端开发的学长，有Python、PHP等后端大神，还有已经毕业的有丰富开发经验的学长。我们的社团交流QQ群：457426992。</p>
+      </div>
+      <div class="col-lg-5" style="text-align:center">
+        <img src="i/php.png" width="80%" id="img2" style="opacity: 0;">
+      </div>
+    </div>
+  </div></div>
+
+  <div class="container" style="padding-top: 2em;">
+    <div class="row">
+      <div class="col-lg-5" style="text-align:center">
+        <img src="i/html.jpg" width="90%" id="img3" style="opacity: 0;">
+      </div>
+      <div class="col-lg-7" id="intro3" style="opacity: 0;">
+        <h1 class="title">WEB前端开发</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;如果你想制作一个一流的互联网网站，首先需要打造的是一流的用户交互体验。你得掌握HTML5、CSS3、JavaScript、JQuery、Ajax等Web前端编程技术，提高互联网交互设计能力，熟悉后端服务器运行环境和数据通信协议，掌握响应式布局框架、Bootstrap、AngularJS等最新的JS框架。</p>
+      </div>
+    </div>
+  </div>
+
+  
+
 </div>
 
 <div class="department" id="department">
@@ -68,21 +83,21 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="department-box" id="department-box1">
-          <img src="i/pic01.jpg">
+          <img src="i/web1.jpg">
           <h3>行政部</h3>
           <p>主要负责社团管理以及活动开展</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="department-box" id="department-box2">
-          <img src="i/pic02.jpg">
+          <img src="i/web2.jpg">
           <h3>宣传部</h3>
           <p>负责社团对外宣传，发布社团成果、最新动态、宣传海报等制作。</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="department-box" id="department-box3">
-          <img src="i/pic03.jpg">
+          <img src="i/web3.jpg">
           <h3>技术部</h3>
           <p>设计组：主要负责项目UI设计<br>前端组：专注于前端开发<br>后端组：专注于后端开发</p>
         </div>
@@ -94,7 +109,7 @@
 <div class="join" id="join">
   <div class="container">
     <h1 class="title">加入我们</h1>
-    <form class="join-form">
+    <!-- <form class="join-form">
       <div class="row">
         <label>姓名：</label><input name="name" type="text" placeholder="姓名" />
       </div>
@@ -128,7 +143,8 @@
       <div class="row">
         <button class="btn btn-lg radius btn-primary" type="submit" id="submit">申请加入</button>
       </div>
-    </form>
+    </form> -->
+    <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="http://form.mikecrm.com/f.php?t=VBogLf"></iframe>
   </div>
 </div>
 
@@ -150,6 +166,49 @@
 
 <script type="text/javascript">
 window.onload = function() {
+  
+  setTimeout(function(){
+    var obj = document.getElementById("banner-content");
+    obj.className += " " + "fadeIn";
+  },500);
+
+  //introduce animation
+  var intro = document.getElementById("intro");
+  if(document.addEventListener) {
+    intro.addEventListener("mouseover",introoverHandler,true);
+  }
+  else if(document.attachEvent) {
+    intro.attachEvent("onmouseover",introoverHandler);
+  }
+  setTimeout(introoverHandler,2000);
+  function introoverHandler(){
+    var img1 = document.getElementById("img1");
+    var img2 = document.getElementById("img2");
+    var img3 = document.getElementById("img3");
+    var obj1 = document.getElementById("intro1");
+    var obj2 = document.getElementById("intro2");
+    var obj3 = document.getElementById("intro3");
+    img1.className += " " + "fadeInLeft";
+    obj1.className += " " + "fadeIn";
+    setTimeout(function(){
+      img2.className += " " + "fadeInRight";
+      obj2.className += " " + "fadeIn";
+      setTimeout(function(){
+        img3.className += " " + "fadeInLeft";
+        obj3.className += " " + "fadeIn";
+      },1000);
+    },1000);
+  }
+
+  // department animation
+  var department = document.getElementById("department");
+  if(document.addEventListener) {
+    department.addEventListener("mouseover",overHandler,true);
+  }
+  else if(document.attachEvent) {
+    department.attachEvent("onmouseover",overhandler);
+  }
+  setTimeout(overHandler,5000);
   function overHandler(){
     var obj1 = document.getElementById("department-box1");
     var obj2 = document.getElementById("department-box2");
@@ -162,19 +221,6 @@ window.onload = function() {
       },500);
     },500);
   }
-  setTimeout(function(){
-    var obj = document.getElementById("banner-content");
-    obj.className += " " + "fadeIn";
-  },1000);
-  setTimeout(overHandler,5000);
-  var department = document.getElementById("department");
-  if(document.addEventListener) {
-    department.addEventListener("mouseover",overHandler,true);
-  }
-  else if(document.attachEvent) {
-    department.attachEvent("onmouseover",overhandler);
-  }
-  
 }
 </script>
 
